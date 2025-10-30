@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Bootcamp</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+      integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav
+      class="navbar bg-light border-bottom navbar-expand-lg fixed-top"
+      data-bs-theme="light"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand fw-bold">FrontEnd BootCamp</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">What You'll Learn</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Showcase-->
+    <section class="bg-light text-dark text-center py-3">
+      <div class="container">
+        <div class="align-items-center pt-5 pb-3">
+          <h1 class="entry-title fw-bold">
+            Become a
+            <strong
+              ><span class="text-secondary">Frontend Web Developer</span>
+            </strong>
+          </h1>
+          <p class="d-flex lead my-4">
+            Learn how to design and build modern, responsive websites using the
+            latest front-end technologies. Our hands-on lessons prepare you for
+            real-world projects and your first developer role.
+          </p>
+          <div class="d-sm-flex align-items-center justify-content-center">
+            <button
+              class="btn btn-outline-secondary btn-lg mx-3 px-5 mb-2"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Enroll Now
+            </button>
+
+            <!-- <a href="#enroll" class="btn btn-outline-secondary btn-lg mx-3 px-5 mb-2"> -->
+            <!--   Enroll Now -->
+            <!-- </a> -->
+
+            <button
+              class="btn btn-secondary btn-lg mx-3 px-5 mb-2"
+              data-bs-toggle="modal"
+              data-bs-target="#learnmore"
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+        <img
+          src="images/showcase0.png"
+          alt=""
+          class="img-fluid rounded shadow w-100"
+        />
+      </div>
+    </section>
+
+    <!--News letter-->
+
+    <section class="bg-secondary text-dark p-5 border-top shadow" id="signup">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0 fw-bold">Sign Up For Our Newsletter</h3>
+
+          <div class="input-group email-input" style="max-width: 400px">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter Email"
+              required
+            />
+            <button class="btn btn-dark btn-lg" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="bg-light text-dark p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <!-- Virtual -->
+          <div class="col-md-4 d-flex">
+            <div class="card bg-dark text-light h-100 flex-fill">
+              <div class="card-body d-flex flex-column text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Virtual</h3>
+                <p class="card-text flex-grow-1">
+                  Learn front-end web development from anywhere in the world
+                  through our virtual classes. Engage with live sessions,
+                  interactive coding challenges, and guided projects from home.
+                </p>
+                <a href="#" class="btn btn-primary mt-auto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hybrid -->
+          <div class="col-md-4 d-flex">
+            <div class="card bg-secondary text-light h-100 flex-fill">
+              <div class="card-body d-flex flex-column text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Hybrid</h3>
+                <p class="card-text flex-grow-1">
+                  Experience the best of both worlds with our hybrid learning
+                  option. Combine flexible online lessons with in-person
+                  workshops to strengthen your front-end skills.
+                </p>
+                <a href="#" class="btn btn-dark mt-auto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- In Person -->
+          <div class="col-md-4 d-flex">
+            <div class="card bg-dark text-light h-100 flex-fill">
+              <div class="card-body d-flex flex-column text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">In Person</h3>
+                <p class="card-text flex-grow-1">
+                  Join our in-person sessions for an immersive, collaborative
+                  learning experience. Work side by side with mentors and peers
+                  as you build real-world web projects together.
+                </p>
+                <a href="#" class="btn btn-primary mt-auto">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Learn Section-->
+
+    <section id="learn" class="p-5 bg-light text-dark border-top">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="images/fundamentals02.svg"
+              class="img-fluid rounded shadow"
+              alt="Learning Fundamentals"
+            />
+          </div>
+          <div class="col-lg-8">
+            <h2 class="fw-bold">Learn The Fundamentals</h2>
+            <p class="lead">
+              Build a solid foundation in front-end development by mastering the
+              core technologies that power every modern website — HTML, CSS, and
+              JavaScript.
+            </p>
+            <p>
+              Understand how the web works from the ground up. Learn how to
+              structure content, style layouts responsively, and make pages
+              interactive with practical, hands-on examples and real-world
+              projects.
+            </p>
+            <a href="#" class="btn btn-outline-secondary mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn-react" class="p-5 bg-dark text-light border-top">
+      <div class="container">
+        <div class="row align-items-center justify-content-between pt-2">
+          <div class="col-lg-8">
+            <h2 class="fw-bold">Learn React</h2>
+            <p class="lead">
+              Build dynamic and responsive front-end projects by mastering
+              React.js — one of the most powerful JavaScript libraries for
+              creating modern user interfaces.
+            </p>
+            <p>
+              Discover how components, state management, and reusable code come
+              together to create efficient web applications. Through hands-on
+              examples and real-world projects, you'll gain the practical skills
+              needed to build fast, interactive, and scalable front-end
+              experiences.
+            </p>
+            <a href="#" class="btn btn-outline-light my-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+
+          <div class="col-lg-4 mt-1 mt-lg-2">
+            <img
+              src="images/react04.svg"
+              class="img-fluid rounded shadow w-100"
+              alt="Learn React"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Questions Accordion-->
+
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center fw-bold pt-3 mb-3">Frequenty Asked Questions</h2>
+      </div>
+
+      <div class="accordion accordion-flush" id="questions">
+        <!--item 1-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-one"
+            >
+              Where exactly are you located?
+            </button>
+          </h2>
+
+          <div
+            id="question-one"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              We’re based in the heart of Metro Manila, Philippines — but all
+              our courses and resources are accessible online. This means you
+              can study anytime and anywhere at your own pace.
+            </div>
+          </div>
+        </div>
+
+        <!--item 2-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-two"
+            >
+              What do I need to know?
+            </button>
+          </h2>
+
+          <div
+            id="question-two"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              No prior experience is required! You just need a computer, a
+              stable internet connection, and the willingness to learn. Our
+              beginner-friendly materials will guide you from the basics to
+              advanced topics step by step.
+            </div>
+          </div>
+        </div>
+
+        <!--item 3-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-three"
+            >
+              How do I sign up?
+            </button>
+          </h2>
+
+          <div
+            id="question-three"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              Signing up is easy! Just click the “Enroll Now” button on our
+              website, create your account, and choose your desired course. Once
+              registered, you’ll get instant access to our learning platform and
+              materials.
+            </div>
+          </div>
+        </div>
+
+        <!--item 4-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-four"
+            >
+              How much does it cost to enroll?
+            </button>
+          </h2>
+
+          <div
+            id="question-four"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              Course fees vary depending on the program. We also offer flexible
+              payment plans, discounts for early enrollees, and scholarships for
+              qualified students. Visit our pricing section to learn more about
+              our latest offers.
+            </div>
+          </div>
+        </div>
+
+        <!--item 5-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-five"
+            >
+              Can it help me find a job?
+            </button>
+          </h2>
+
+          <div
+            id="question-five"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              Absolutely! Our courses are designed with real-world skills in
+              mind. You’ll learn practical, job-ready skills that employers are
+              actively looking for. We also provide portfolio guidance and
+              career support to help you stand out in the job market.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Instructors-->
+
+    <section id="instructors" class="p-5 bg-dark">
+      <div class="container">
+        <h2 class="text-center text-white">Our Instructors</h2>
+        <p class="lead text-center text-white mb-5">
+          Our instructors all have 5+ years working as a web developer in the
+          industry
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/15.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">John Doe</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/13.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Jane Doe</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/13.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Steve Smith</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/15.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Sara Smith</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5 bg-light">
+      <div class="container">
+        <div class="row p-4 g-4">
+          <div class="col-md-6 col-sm-12">
+            <h2 class="text-center mb-4 fw-bold">Contact Info</h2>
+            <ul class="list-unstyled fs-6 pt-3">
+              <li class="mb-2 border-bottom">
+                <i class="bi bi-geo-alt-fill text-dark me-2"></i>
+                <strong>Main Location:</strong> 50 Main St, Metro Manila,
+                Philippines
+              </li>
+              <li class="mb-2 border-bottom">
+                <i class="bi bi-telephone-fill text-dark me-2"></i>
+                <strong>Enrollment Phone:</strong> (555) 555-5555
+              </li>
+              <li class="mb-2 border-bottom">
+                <i class="bi bi-telephone-fill text-dark me-2"></i>
+                <strong>Student Phone:</strong> (333) 333-3333
+              </li>
+              <li class="mb-2 border-bottom">
+                <i class="bi bi-envelope-fill text-dark me-2"></i>
+                <strong>Enrollment Email:</strong> enroll@frontendbc.test
+              </li>
+              <li class="mb-2 border-bottom">
+                <i class="bi bi-envelope-fill text-dark me-2"></i>
+                <strong>Student Email:</strong> student@frontendbc.test
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <img
+              src="images/map-image.png"
+              alt="location"
+              class="img-fluid rounded shadow mx-auto my-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2025 Frontend Bootcamp</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enroll"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="enroll">Enrollment Form</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">
+              Please fill out this form then we will get back to you.
+            </p>
+
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
